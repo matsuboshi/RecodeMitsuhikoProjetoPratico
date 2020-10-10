@@ -1,0 +1,209 @@
+* {
+  font-family: 'Lobster', Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 20px;
+}
+
+hr {
+  border: 2px solid black;
+}
+
+nav {
+  width: 100%;
+  background-color: #3a4e62;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  height: 70px;
+}
+
+main {
+  min-height: calc(100vh - 50px - 70px - 150px);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  grid-row: 1;
+  background-color: #973532;
+  text-align: center;
+  color: white;
+}
+
+nav a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  width: 25%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  background-color: #273746;
+}
+
+footer .formasPagamento {
+  font-size: 1.2rem;
+}
+
+footer img {
+  width: 300px;
+  margin: 10px;
+}
+
+/* Beggining of session for content MAINs */
+
+.homeMain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.productsMain {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.storesMain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactMain {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+/* End of session for MAINs */
+
+.storesMain div {
+  color: white;
+  background-color: #3a4e62;
+  border-radius: 20px;
+  margin: 30px 30px auto 30px;
+  width: 20%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactMain textarea,
+.contactMain input {
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px 0px gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contactMain div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactMain div button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #273746;
+  color: white;
+}
+
+.lateralMenuForProducts {
+  padding: 20px;
+  min-width: 150px;
+}
+
+.lateralMenuForProducts h3 {
+  padding: 5px 0;
+}
+
+.lateralMenuForProducts ul li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.lateralMenuForProducts ul li:hover {
+  background-color: #3a4e62;
+  color: white;
+}
+
+.allProducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* TOP CSS for product cards */
+
+.itemDiv {
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+.itemDiv:hover {
+  margin-top: -20px;
+}
+
+.productImageDiv {
+  height: 200px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee9e6;
+}
+
+.productImageDiv:hover {
+  background-color: #d8af97;
+}
+
+.productInfoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: inherit;
+}
+
+.productName {
+  width: inherit;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.pricesDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+}
+
+.newPrice {
+  color: darkred;
+}
+
+/* Bottom CSS for product cards */

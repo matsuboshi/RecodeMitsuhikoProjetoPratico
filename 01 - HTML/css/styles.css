@@ -1,0 +1,134 @@
+body {
+  font-family: 'Lobster', cursive;
+  padding: 0;
+  margin: 0;
+  /* background-color: #a7d6d4; */
+  /* background-color: #af543b; */
+  /* background-color: #eee9e6; */
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.topBar {
+  width: 100%;
+  /* background-color: #3bafa2; */
+  /* light blue */
+  background-color: #3a4e62;
+  /* dark blue */
+  /* background-color: #273746; */
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: #3bafa2; */
+  background-color: #973532;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 50px;
+}
+
+.topBarAnchors {
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* Beggining of session for content DIVs */
+
+.homeDiv {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  min-height: 290px;
+}
+
+.productsDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.storesDiv {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  min-height: 290px;
+}
+
+.contactDiv {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  min-height: 290px;
+}
+
+/* End of session for content DIVs */
+
+.insideContactDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.allProducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newPrice {
+  color: darkred;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+}
+
+.productNameSpan {
+  font-size: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: inherit;
+}
+
+.productInfoDiv {
+  text-align: center;
+  width: inherit;
+}
+
+.productImage {
+  max-width: 160px;
+  max-height: 210px;
+}
+
+.productImageDiv {
+  height: 250px;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee9e6;
+}
+
+.itemDiv {
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  padding: 5px 5px 40px 5px;
+}
