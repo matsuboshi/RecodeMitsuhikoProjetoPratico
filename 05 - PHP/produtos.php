@@ -38,9 +38,9 @@ if (!$conn) {
     <section class="lateralMenuForProducts">
       <h3>Categorias</h3>
       <ul>
-        <li onclick="allCategories()">Todos (8)</li>
+        <li onclick="allCategories()">Todos (10)</li>
         <li onclick="filterCategory('refrigerator')">Geladeiras (2)</li>
-        <li onclick="filterCategory('laundryMachine')">Lavadoras (2)</li>
+        <li onclick="filterCategory('laundryMachine')">Lavadoras (4)</li>
         <li onclick="filterCategory('microwave')">Microondas (2)</li>
         <li onclick="filterCategory('dishwasher')">Lava-Loucas (2)</li>
       </ul>
