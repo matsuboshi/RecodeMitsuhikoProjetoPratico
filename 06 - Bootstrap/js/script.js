@@ -19,14 +19,3 @@ function allCategories() {
     elements[i].style = 'display: block;';
   }
 }
-
-let highlightImg = (image) => {
-  console.log(image);
-  if (image.width == 160) {
-    image.width = 190;
-    image.style = 'transition: 0.2s;';
-  } else {
-    image.width = 160;
-    image.style = 'transition: 0.2s;';
-  }
-};

@@ -31,7 +31,7 @@ if (isset($_POST['nome']) && isset($_POST['msg'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php require_once('bootstrap.html') ?>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+
 
   <title>CONTATO</title>
 
