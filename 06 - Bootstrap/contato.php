@@ -61,7 +61,7 @@ if (isset($_POST['nome']) && isset($_POST['msg'])) {
 
     <section class="row">
 
-      <div class="col-lg-4 d-flex flex-column flex-xl-row align-items-center">
+      <div class="col-lg-4 d-flex flex-column align-items-center">
 
 
         <div class="card bg-dark text-white m-4 w-100">
