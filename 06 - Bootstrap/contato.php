@@ -136,3 +136,8 @@ if (isset($_POST['nome']) && isset($_POST['msg'])) {
 </body>
 
 </html>
+
+
+<?php
+mysqli_close($conn)
+?>
