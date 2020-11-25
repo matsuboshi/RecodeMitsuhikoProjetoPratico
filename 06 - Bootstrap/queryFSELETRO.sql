@@ -2,7 +2,11 @@
 -- DROP TABLE fseletro.pedidos;
 -- DROP TABLE fseletro.comentarios;
 -- DROP SCHEMA fseletro;
-CREATE SCHEMA fseletro;
+-- CREATE SCHEMA fseletro;
+DROP DATABASE IF EXISTS fseletro;
+
+
+CREATE DATABASE IF NOT EXISTS fseletro;
 
 
 USE fseletro;
