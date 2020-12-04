@@ -57,13 +57,29 @@ CREATE TABLE fseletro.comentarios (
 INSERT INTO
   fseletro.comentarios(nome, msg)
 VALUES
-  ('Mitch Takushi', 'What a wonderful store');
-
-
-INSERT INTO
-  fseletro.comentarios(nome, msg)
-VALUES
-  ('Natasha', 'Na zdorovie! ');
+  ('Junior', 'Eu tenho um plano!'),
+  ('Natasha', 'Putin loves hackers!'),
+  ('Dimitri', 'I am no one, I am everyone!'),
+  (
+    'Mitch',
+    'Invest your money instead of spending it.'
+  ),
+  ('Boça', 'O segredo estah na datilografia, cara!'),
+  ('Hugo', 'Prefiro R do que JS!'),
+  ('Raquel', 'Vou comprar tudo dessa loja!!!'),
+  (
+    'Daniel',
+    'Meu, o PHP morreu! Galera só usa Java!'
+  ),
+  (
+    'Bartolomeu',
+    'Sou cientista de dados e só uso HTML.'
+  ),
+  (
+    'Nostradamus',
+    'Usa Laravel, cara! Perde tempo nao!'
+  ),
+  ('Mr Clean', 'How clean is your code?');
 
 
 INSERT INTO
