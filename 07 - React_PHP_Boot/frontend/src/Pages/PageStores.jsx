@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Canvas from '../Components/Canvas';
 import Header from '../Components/Header';
 import StoreCard from '../Components/StoreCard';
 
 export default function PageStores() {
+  useEffect(() => {
+    console.log('Just opened page ---> STORES');
+  }, []);
+
   return (
     <Canvas>
       <Header title="Nossas Lojas" text="Esperamos vê-lx pessoalmente! :D" />

@@ -93,7 +93,7 @@ INSERT INTO
   )
 VALUES
   (
-    "microwave",
+    "Microondas",
     "img/product1.png",
     "Microondas 25L Espelhado Philco 220v",
     1589.00,
@@ -101,7 +101,7 @@ VALUES
     35
   ),
   (
-    "microwave",
+    "Microondas",
     "img/product2.png",
     "Forno de Microondas Eletrolux 20L Branco",
     2039.00,
@@ -109,7 +109,7 @@ VALUES
     41
   ),
   (
-    "refrigerator",
+    "Geladeira",
     "img/product3.png",
     "Geladeira Frost Free Brastemp Side Inverse 540 litros",
     11380.00,
@@ -117,7 +117,7 @@ VALUES
     32
   ),
   (
-    "refrigerator",
+    "Geladeira",
     "img/product4.png",
     "Geladeira Frost Free Brastemp Branca 375 litros",
     6389.00,
@@ -125,7 +125,7 @@ VALUES
     8
   ),
   (
-    "dishwasher",
+    "Lava Louça",
     "img/product5.png",
     "Lava Louça Compacta 8 Serviços Branca 127V Brastemp",
     2389.00,
@@ -133,7 +133,7 @@ VALUES
     17
   ),
   (
-    "dishwasher",
+    "Lava Louça",
     "img/product6.png",
     "Lava-Louças Electrolux Inox com 10 Serviços, 06 Programas de Lavagem e Painel Blue Touch",
     4390.00,
@@ -141,7 +141,7 @@ VALUES
     45
   ),
   (
-    "laundryMachine",
+    "Lavadora",
     "img/product7.png",
     "Lavadora de Roupas Philco Inverter 12KG",
     3309.00,
@@ -149,7 +149,7 @@ VALUES
     9
   ),
   (
-    "laundryMachine",
+    "Lavadora",
     "img/product8.png",
     "Lavadora de Roupas Brastemp 11 kg com Turbo Performance Branca",
     4018.00,
@@ -157,7 +157,7 @@ VALUES
     24
   ),
   (
-    "laundryMachine",
+    "Lavadora",
     "img/product9.png",
     "Samsung WW75J54E0IW 7.5kg Front Load Washing Machine",
     3353.00,
@@ -165,7 +165,7 @@ VALUES
     10
   ),
   (
-    "laundryMachine",
+    "Lavadora",
     "img/product10.png",
     "AEG Washing Machine L7FE8432S",
     3210.00,

@@ -12,6 +12,7 @@ export default function PageContact() {
 
   useEffect(() => {
     fetchItems();
+    console.log('Just opened page ---> CONTACT');
   }, [render]);
 
   const fetchItems = async () => {

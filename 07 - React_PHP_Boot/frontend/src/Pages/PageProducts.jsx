@@ -10,6 +10,7 @@ export default function PageProducts() {
 
   useEffect(() => {
     fetchProducts();
+    console.log('Just opened page ---> PRODUCTS');
   }, []);
 
   const fetchProducts = async () => {
@@ -25,7 +26,7 @@ export default function PageProducts() {
   const handleShowAllButtonClick = () => {
     const newProductsToShow = products;
     setProductsToShow(newProductsToShow);
-    console.log('SHOW ALL');
+    console.log('SHOW: Everything');
   };
 
   const handleFilterCategoryClick = (category) => {
@@ -33,7 +34,7 @@ export default function PageProducts() {
     setProductsToShow(
       newProductsToShow.filter((item) => item.categoria === category)
     );
-    console.log(`Filter by ${category}`);
+    console.log(`SHOW: ${category}`);
   };
 
   return (

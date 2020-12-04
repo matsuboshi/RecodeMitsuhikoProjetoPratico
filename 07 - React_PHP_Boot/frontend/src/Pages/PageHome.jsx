@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Canvas from '../Components/Canvas';
 import Header from '../Components/Header';
 
 export default function PageHome() {
+  useEffect(() => {
+    console.log('Just opened page ---> HOME');
+  }, []);
+
   return (
     <Canvas>
       <Header
