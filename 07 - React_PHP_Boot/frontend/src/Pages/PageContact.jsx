@@ -9,10 +9,23 @@ export default function PageContact() {
   const [render, setRender] = useState(false);
   const [msg, setMsg] = useState(false);
   const [emptyField, setEmptyField] = useState(true);
+  const [loading, setloading] = useState(true);
 
   useEffect(() => {
-    fetchItems();
     console.log('Just opened page ---> CONTACT');
+
+    let mounted = true;
+    fetchItems().then(() => {
+      if (mounted) {
+        setloading(false);
+        console.log('COMMENTS MOUNTED');
+      }
+    });
+
+    return function cleanup() {
+      mounted = false;
+      console.log('COMMENTS UNMOUNTED');
+    };
   }, [render]);
 
   const fetchItems = async () => {
@@ -186,18 +199,20 @@ export default function PageContact() {
                 background: 'linear-gradient(90deg, #3D215B, #611e8a)',
               }}
             >
-              {items.map((item) => (
-                <div id="comment" key={`${item.id}`} style={styles.dialogBox}>
-                  <p className="m-0 p-0">
-                    <b className="text-success">
-                      {' '}
-                      {item.nome} [{formatDate(item.data)}] :
-                    </b>
-                    <br />
-                    {item.msg}
-                  </p>
-                </div>
-              ))}
+              {loading ? <p>Loading...</p> : <p>Fetched!!</p>}
+              {!loading &&
+                items.map((item) => (
+                  <div id="comment" key={`${item.id}`} style={styles.dialogBox}>
+                    <p className="m-0 p-0">
+                      <b className="text-success">
+                        {' '}
+                        {item.nome} [{formatDate(item.data)}] :
+                      </b>
+                      <br />
+                      {item.msg}
+                    </p>
+                  </div>
+                ))}
             </div>
           </div>
         </section>

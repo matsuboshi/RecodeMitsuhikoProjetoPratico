@@ -7,10 +7,23 @@ import SideMenu from '../Components/SideMenu';
 export default function PageProducts() {
   const [products, setProducts] = useState([]);
   const [productsToShow, setProductsToShow] = useState([]);
+  const [loading, setloading] = useState(true);
 
   useEffect(() => {
-    fetchProducts();
     console.log('Just opened page ---> PRODUCTS');
+
+    let mounted = true;
+    fetchProducts().then(() => {
+      if (mounted) {
+        setloading(false);
+        console.log('PRODUCTS MOUNTED');
+      }
+    });
+
+    return function cleanup() {
+      mounted = false;
+      console.log('PRODUCTS UNMOUNTED');
+    };
   }, []);
 
   const fetchProducts = async () => {
@@ -58,7 +71,9 @@ export default function PageProducts() {
             id="productCards"
             className=" col-lg-9  d-flex flex-wrap justify-content-around"
           >
-            {productsToShow &&
+            {loading && <h2>Loading...</h2>}
+            {!loading &&
+              productsToShow &&
               productsToShow.map((item) => (
                 <Fragment key={item.id}>
                   <ProductCard
