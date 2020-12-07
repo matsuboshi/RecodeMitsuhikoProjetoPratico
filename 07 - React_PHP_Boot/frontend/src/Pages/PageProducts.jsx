@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Canvas from '../Components/Canvas';
 import Header from '../Components/Header';
 import ProductCard from '../Components/ProductCard';
@@ -26,7 +26,7 @@ export default function PageProducts() {
   const handleShowAllButtonClick = () => {
     const newProductsToShow = products;
     setProductsToShow(newProductsToShow);
-    console.log('SHOW: Everything');
+    console.log('SHOW: Every product!');
   };
 
   const handleFilterCategoryClick = (category) => {
@@ -50,6 +50,7 @@ export default function PageProducts() {
             <SideMenu
               onShowAllButtonClick={handleShowAllButtonClick}
               onFilterCategoryClick={handleFilterCategoryClick}
+              data={products}
             />
           </div>
 
@@ -59,7 +60,7 @@ export default function PageProducts() {
           >
             {productsToShow &&
               productsToShow.map((item) => (
-                <div key={item.id}>
+                <Fragment key={item.id}>
                   <ProductCard
                     categoria={item.categoria}
                     imagem={item.imagem}
@@ -67,7 +68,7 @@ export default function PageProducts() {
                     preco={item.preco}
                     preco_venda={item.preco_venda}
                   />
-                </div>
+                </Fragment>
               ))}
           </div>
         </section>
