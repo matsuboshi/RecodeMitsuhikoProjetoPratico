@@ -28,7 +28,7 @@ export default function PageProducts() {
 
   const fetchProducts = async () => {
     const url =
-      'http://projetopraticomitsuhikorecode/07%20-%20React_PHP_Boot/backend/getProd.php';
+      'http://code/RecodeMitsuhikoProjetoPratico/07%20-%20React_PHP_Boot/backend/getProd.php';
     const data = await fetch(url);
     const items = await data.json();
     setProducts(items);
