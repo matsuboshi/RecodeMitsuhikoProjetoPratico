@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Search countries</title>
+</head>
+
+<style>
+  * {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  body {
+    background: #3bafa2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    background: #51968e;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+  }
+
+  .cardsDiv {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardDiv {
+    background-color: #51968e;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  img {
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+
+  *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+</style>
+
+<body>
+  <a href="/">New search</a>
+
+  <h1>
+    Countries that speak
+    <% for(i=0;i<dados[0].languages.length;i++){ %>
+      <% if(dados[0].languages[i].iso639_1===title){%>
+        <span> </span>
+        <%=dados[0].languages[i].name %>
+          <% } %>
+            <% } %>
+              :
+  </h1>
+
+  <div class="cardsDiv">
+
+    <% if(dados.length> 0){%>
+      <% for(i=0;i<dados.length;i++){ %>
+
+        <div class="cardDiv">
+          <div>
+            <img src="<%=dados[i].flag %>" alt="<%=dados[i].name %>" />
+          </div>
+          <p>
+            <%=dados[i].name %>
+          </p>
+        </div>
+
+        <% }}else{ %>
+
+          <h2>No country was found!</h2>
+
+          <% } %>
+
+  </div>
+</body>
+
+</html>

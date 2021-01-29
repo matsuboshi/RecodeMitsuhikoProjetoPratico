@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search countries</title>
+  </head>
+
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    body {
+      background: #3bafa2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    button,
+    select,
+    option {
+      border: 0;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    button {
+      /* background: #51968e; */
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    select,
+    option {
+      background: #af713b;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 5px 20px;
+      margin: 5px;
+      border-radius: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Lobster', cursive;
+      font-weight: normal;
+    }
+
+    *:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+  <body>
+    <h1>Search countries:</h1>
+
+    <form action="by-language" method="post">
+      <label for="lang">By spoken language:</label>
+      <select name="lang" id="lang">
+        <option value="en">English</option>
+        <option value="zh">Chinese</option>
+        <option value="it">Italian</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="ar">Arabic</option>
+        <option value="de">German</option>
+        <option value="ru">Russian</option>
+        <option value="pt">Portuguese</option>
+        <option value="ko">Korean</option>
+      </select>
+      <button>Search</button>
+    </form>
+
+    <form action="/by-region" method="post">
+      By region:
+      <label for="region"></label>
+      <select name="region" id="region">
+        <option value="africa">Africa</option>
+        <option value="americas">Americas</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+        <option value="polar">Polar</option>
+      </select>
+      <button>Search</button>
+    </form>
+  </body>
+</html>
