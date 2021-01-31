@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Mini calculadora</title>
+  </head>
+  <body>
+    <div class="bg-dark p-5" style="height: 100vh">
+      <div class="container border p-4 bg-white">
+        <h1 class="display-4">Mini calculadora</h1>
+        <hr />
+        <form action="" method="POST">
+          <input
+            type="number"
+            name="num1"
+            placeholder="type a number..."
+            class="form-control my-3"
+          />
+          <input
+            type="number"
+            name="num2"
+            placeholder="type a number..."
+            class="form-control my-3"
+          />
+
+          <table>
+            <tr>
+              <td>SOMA:</td>
+              <td>
+                <input type="radio" name="sum" value="on" />on
+                <input type="radio" name="sum" value="off" checked />off
+              </td>
+            </tr>
+
+            <tr>
+              <td>SUBTRAÇÃO:</td>
+              <td>
+                <input type="radio" name="sub" value="on" />on
+                <input type="radio" name="sub" value="off" checked />off
+              </td>
+            </tr>
+
+            <tr>
+              <td>MULTIPLICAÇÃO:</td>
+              <td>
+                <input type="radio" name="mul" value="on" />on
+                <input type="radio" name="mul" value="off" checked />off
+              </td>
+            </tr>
+
+            <tr>
+              <td>DIVISÃO:</td>
+              <td>
+                <input type="radio" name="div" value="on" />on
+                <input type="radio" name="div" value="off" checked />off
+              </td>
+            </tr>
+          </table>
+
+          <div class="mt-4">
+            <button class="btn btn-primary">Enviar</button>
+            <button class="btn btn-secondary" type="reset">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
