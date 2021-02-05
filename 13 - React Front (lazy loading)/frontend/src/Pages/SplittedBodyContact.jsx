@@ -210,7 +210,7 @@ export default function SplittedBodyContact() {
             {loading ? <p>Loading...</p> : <p>Fetched!!</p>}
             {!loading &&
               items.map((item) => (
-                <div id="comment" key={`${item.id}`} style={styles.dialogBox}>
+                <div id="comment" key={`${item._id}`} style={styles.dialogBox}>
                   <p className="m-0 p-0">
                     <b className="text-success">
                       {' '}
