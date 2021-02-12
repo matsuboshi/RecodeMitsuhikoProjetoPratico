@@ -27,7 +27,7 @@ const css = {
     alignItems: 'center',
     background: `linear-gradient(90deg,
       rgba(255, 75, 11, 0.8) 0%,
-      rgba(254, 155, 22, 0.8) 100%), url('https://static1.mansionglobal.com/production/media/article-images/39f4fbf63af608f538be1c5696bf7fa9/large_Babcock-Peffer.jpg');`,
+      rgba(254, 155, 22, 0.8) 100%), url('https://static1.mansionglobal.com/production/media/article-images/39f4fbf63af608f538be1c5696bf7fa9/large_Babcock-Peffer.jpg')`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
